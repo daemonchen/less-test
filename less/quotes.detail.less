@@ -1,0 +1,158 @@
+.quotes-detail-index-mask(@url,@begin-color,@end-color){
+    background-image:-webkit-linear-gradient(top,@begin-color,@begin-color 25%,@end-color 75%,@end-color);
+    -webkit-mask-box-image: url(@url) 0 0 0 0 stretch stretch;
+}
+
+.quotes-detail-index-up(){
+    .quotes-detail-index-mask('../images/up.png',#ff3f3f,#d00000);    
+}
+
+.quotes-detail-index-down(){
+    .quotes-detail-index-mask('../images/down.png',#008000,#006600);
+}
+
+#jry-mobile{
+    #quotes-detail-container{
+        
+        #handicap-top,#handicap-bottom{
+            .handicap{
+                background-color:@handicap-bg-color;
+                border:1px solid @handicap-border-color;
+                -webkit-border-radius:5px;
+            }
+        }
+        .x-quotes-detail-flushing{
+            .handicap{
+                .buy-sell,.now{
+                    -webkit-animation-name:flushingDetail;
+                    -webkit-animation-duration:800ms;
+                    // -webkit-animation-iteration-count:infinite;
+                }
+            }
+        }
+        #handicap-top{
+            .x-innerhtml{
+                padding: 5px;
+            }
+            .up{
+                .index{
+                    .arrow{
+                        .quotes-detail-index-up();
+                    }
+                    
+                }
+                .buy-sell,.now,.updrop{
+                    color:@quotes-up-button-bg-color;
+                }
+            }
+            .down{
+                .index{
+                    .arrow{
+                        .quotes-detail-index-down();
+                    }
+                    
+                }
+                .buy-sell,.now,.updrop{
+                    color:@handicap-top-down-font-color;
+                }
+            }
+
+            .handicap{
+                height: 38px;
+                .index,.buy-sell,.updrop,.now{
+                    float:left;
+                    line-height: 38px;
+                    vertical-align:middle;
+                }
+                .index{
+                    height:38px;
+                    width:30px;
+                    .arrow{
+                        height:30px;
+                        margin-top:3px;
+                    }
+                }
+                .buy-sell,.now{
+                    font-size: 22px;
+                    width: 50%;
+                    font-weight: bold;
+                    text-align: center;
+                }
+                .updrop{
+                    font-size:13px;
+                    float:right;
+                    height: 100%;
+                    padding-right:10px;
+                    font-weight: bold;
+                }
+            }
+
+        }
+        #handicap-bottom{
+            font-size:13px;
+            td{
+                line-height: 20px;
+                font-size:13px;
+                letter-spacing:2px;
+                text-align: center;
+            }
+            .x-innerhtml{
+                padding: 5px;
+            }
+            .handicap{
+                .down{
+                    color:@quotes-down-button-bg-color;
+                }
+                .up{
+                    color:@quotes-up-button-bg-color;
+                }
+            }
+            .high,.low,.open,.preclose,.avg,.volumeValue{
+                letter-spacing:0px;
+                font-weight:bolder;
+                font-size:13px;
+                text-align: left;
+            }
+         }
+    }
+
+    #quotes-detail-container.style-now{
+        #handicap-top{
+            .buy-sell{
+                display: none;
+            }
+            .now{
+                display: auto;
+            }
+        }
+        #handicap-bottom{
+            .volume{
+                display: auto;
+            }
+        }
+    }
+    #quotes-detail-container.style-buy-sell{
+        #handicap-top{
+            .buy-sell{
+                display: auto;
+            }
+            .now{
+                display: none;
+            }
+        }
+        #handicap-bottom{
+            .volume{
+                display: none;
+            }
+        }
+    }
+}
+
+@-webkit-keyframes flushing{
+    from {background-color:@quotes-button-color;}
+    to {background-color:@flushing-bg-color;}
+}
+@-webkit-keyframes flushingDetail{
+    from {color:@flushing-detail-font-from-color;}
+    to {color:@flushing-detail-font-to-color;}
+}

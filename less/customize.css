@@ -1,0 +1,320 @@
+#jry-mobile #main-tabbar .x-tab {
+  -webkit-box-flex: 1;
+}
+#jry-mobile #main-tabbar .x-tab .x-button-icon {
+  background-image: -webkit-linear-gradient(top, #e0e6ed, #6e7278);
+}
+#jry-mobile #main-tabbar .x-tab-active .x-button-icon {
+  background-image: -webkit-linear-gradient(top, #ffffdb, #eee29d 35%, #c9921c);
+}
+#jry-mobile #main-tabbar .x-tab-active .x-button-label {
+  color: #efcb5c;
+}
+#jry-mobile .quotes-panel .quotes-header,
+#jry-mobile .quotes-panel .quotes-header1 {
+  font-size: 0.8em;
+  font-family: 'SimHei';
+  color: #6b6b6b;
+  border-bottom: 1px solid #8e8080;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#jry-mobile .quotes-panel .quotes-header .name,
+#jry-mobile .quotes-panel .quotes-header1 .name {
+  padding-left: 15px;
+}
+#jry-mobile .quotes-panel .quotes-header .buy,
+#jry-mobile .quotes-panel .quotes-header .sell,
+#jry-mobile .quotes-panel .quotes-header .now {
+  text-align: right;
+  padding-right: 20px;
+}
+#jry-mobile .quotes-panel .quotes-header .percent-updrop {
+  text-align: center;
+}
+#jry-mobile .quotes-panel .quotes-header1 .now {
+  text-align: right;
+  padding-right: 20px;
+}
+#jry-mobile .quotes-panel .quotes-header1 .percent-updrop {
+  text-align: right;
+}
+#jry-mobile .quotes-panel .quotes-list .x-data-item,
+#jry-mobile .quotes-panel .quotes-list1 .x-data-item {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+#jry-mobile .quotes-panel .quotes-list .x-data-item-pressed,
+#jry-mobile .quotes-panel .quotes-list1 .x-data-item-pressed {
+  background-color: #c1c8d3;
+}
+#jry-mobile .quotes-panel .quotes-list .x-data-item.up .buy,
+#jry-mobile .quotes-panel .quotes-list1 .x-data-item.up .buy,
+#jry-mobile .quotes-panel .quotes-list .x-data-item.up .sell,
+#jry-mobile .quotes-panel .quotes-list1 .x-data-item.up .sell,
+#jry-mobile .quotes-panel .quotes-list .x-data-item.up .now,
+#jry-mobile .quotes-panel .quotes-list1 .x-data-item.up .now {
+  color: #ec0000;
+}
+#jry-mobile .quotes-panel .quotes-list .x-data-item.up .percent,
+#jry-mobile .quotes-panel .quotes-list1 .x-data-item.up .percent,
+#jry-mobile .quotes-panel .quotes-list .x-data-item.up .updrop,
+#jry-mobile .quotes-panel .quotes-list1 .x-data-item.up .updrop {
+  color: #ffffff;
+  background-color: #ec0000;
+}
+#jry-mobile .quotes-panel .quotes-list .x-data-item.down .buy,
+#jry-mobile .quotes-panel .quotes-list1 .x-data-item.down .buy,
+#jry-mobile .quotes-panel .quotes-list .x-data-item.down .sell,
+#jry-mobile .quotes-panel .quotes-list1 .x-data-item.down .sell,
+#jry-mobile .quotes-panel .quotes-list .x-data-item.down .now,
+#jry-mobile .quotes-panel .quotes-list1 .x-data-item.down .now {
+  color: #007700;
+}
+#jry-mobile .quotes-panel .quotes-list .x-data-item.down .percent,
+#jry-mobile .quotes-panel .quotes-list1 .x-data-item.down .percent,
+#jry-mobile .quotes-panel .quotes-list .x-data-item.down .updrop,
+#jry-mobile .quotes-panel .quotes-list1 .x-data-item.down .updrop {
+  color: #ffffff;
+  background-color: #007700;
+}
+#jry-mobile .quotes-panel .quotes-list .x-data-item.quotes-flushing,
+#jry-mobile .quotes-panel .quotes-list1 .x-data-item.quotes-flushing {
+  -webkit-animation-name: flushing;
+  -webkit-animation-duration: 500ms;
+}
+#jry-mobile .quotes-panel .quotes-list .x-data-item .name,
+#jry-mobile .quotes-panel .quotes-list .x-data-item .buy,
+#jry-mobile .quotes-panel .quotes-list .x-data-item .sell,
+#jry-mobile .quotes-panel .quotes-list .x-data-item .percent,
+#jry-mobile .quotes-panel .quotes-list .x-data-item .updrop,
+#jry-mobile .quotes-panel .quotes-list .x-data-item .now {
+  display: inline-block;
+  width: 80px;
+}
+#jry-mobile .quotes-panel .quotes-list .x-data-item .name,
+#jry-mobile .quotes-panel .quotes-list .x-data-item .buy,
+#jry-mobile .quotes-panel .quotes-list .x-data-item .sell {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#jry-mobile .quotes-panel .quotes-list .x-data-item .name {
+  text-align: left;
+  padding-left: 15px;
+}
+#jry-mobile .quotes-panel .quotes-list .x-data-item .buy,
+#jry-mobile .quotes-panel .quotes-list .x-data-item .sell,
+#jry-mobile .quotes-panel .quotes-list .x-data-item .now {
+  text-align: right;
+  padding-right: 20px;
+}
+#jry-mobile .quotes-panel .quotes-list .x-data-item .percent,
+#jry-mobile .quotes-panel .quotes-list .x-data-item .updrop {
+  text-align: center;
+  padding: 7px 0px;
+  margin-left: 8px;
+  width: 64px;
+}
+#jry-mobile .quotes-panel .quotes-list1 .x-data-item .name,
+#jry-mobile .quotes-panel .quotes-list1 .x-data-item .percent,
+#jry-mobile .quotes-panel .quotes-list1 .x-data-item .updrop,
+#jry-mobile .quotes-panel .quotes-list1 .x-data-item .now {
+  display: inline-block;
+  width: 100px;
+}
+#jry-mobile .quotes-panel .quotes-list1 .x-data-item .name,
+#jry-mobile .quotes-panel .quotes-list1 .x-data-item .now {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#jry-mobile .quotes-panel .quotes-list1 .x-data-item .name {
+  text-align: left;
+  padding-left: 15px;
+}
+#jry-mobile .quotes-panel .quotes-list1 .x-data-item .now {
+  text-align: right;
+  padding-right: 20px;
+}
+#jry-mobile .quotes-panel .quotes-list1 .x-data-item .percent,
+#jry-mobile .quotes-panel .quotes-list1 .x-data-item .updrop {
+  text-align: right;
+  margin-left: 48px;
+  text-align: center;
+  padding: 7px 0px;
+  width: 64px;
+}
+#jry-mobile .quotes-panel.percent .x-data-item {
+  border-bottom: 1px solid #bbb;
+}
+#jry-mobile .quotes-panel.percent .x-data-item .percent {
+  display: auto;
+}
+#jry-mobile .quotes-panel.percent .x-data-item .updrop {
+  display: none;
+}
+#jry-mobile .quotes-panel.percent .quotes-header .percent,
+#jry-mobile .quotes-panel.percent .quotes-header1 .percent {
+  display: auto;
+}
+#jry-mobile .quotes-panel.percent .quotes-header .updrop,
+#jry-mobile .quotes-panel.percent .quotes-header1 .updrop {
+  display: none;
+}
+#jry-mobile .quotes-panel.updrop .x-data-item {
+  border-bottom: 1px solid #bbb;
+}
+#jry-mobile .quotes-panel.updrop .x-data-item .percent {
+  display: none;
+}
+#jry-mobile .quotes-panel.updrop .x-data-item .updrop {
+  display: auto;
+}
+#jry-mobile .quotes-panel.updrop .quotes-header .percent,
+#jry-mobile .quotes-panel.updrop .quotes-header1 .percent {
+  display: none;
+}
+#jry-mobile .quotes-panel.updrop .quotes-header .updrop,
+#jry-mobile .quotes-panel.updrop .quotes-header1 .updrop {
+  display: auto;
+}
+#jry-mobile #quotes-detail-container #handicap-top .handicap,
+#jry-mobile #quotes-detail-container #handicap-bottom .handicap {
+  background-color: #eceef0;
+  border: 1px solid #e2e2e2;
+  -webkit-border-radius: 5px;
+}
+#jry-mobile #quotes-detail-container .x-quotes-detail-flushing .handicap .buy-sell,
+#jry-mobile #quotes-detail-container .x-quotes-detail-flushing .handicap .now {
+  -webkit-animation-name: flushingDetail;
+  -webkit-animation-duration: 800ms;
+}
+#jry-mobile #quotes-detail-container #handicap-top .x-innerhtml {
+  padding: 5px;
+}
+#jry-mobile #quotes-detail-container #handicap-top .up .index .arrow {
+  background-image: -webkit-linear-gradient(top, #ff3f3f, #ff3f3f 25%, #d00000 75%, #d00000);
+  -webkit-mask-box-image: url('../images/up.png') 0 0 0 0 stretch stretch;
+}
+#jry-mobile #quotes-detail-container #handicap-top .up .buy-sell,
+#jry-mobile #quotes-detail-container #handicap-top .up .now,
+#jry-mobile #quotes-detail-container #handicap-top .up .updrop {
+  color: #ec0000;
+}
+#jry-mobile #quotes-detail-container #handicap-top .down .index .arrow {
+  background-image: -webkit-linear-gradient(top, #008000, #008000 25%, #006600 75%, #006600);
+  -webkit-mask-box-image: url('../images/down.png') 0 0 0 0 stretch stretch;
+}
+#jry-mobile #quotes-detail-container #handicap-top .down .buy-sell,
+#jry-mobile #quotes-detail-container #handicap-top .down .now,
+#jry-mobile #quotes-detail-container #handicap-top .down .updrop {
+  color: #2b7de1;
+}
+#jry-mobile #quotes-detail-container #handicap-top .handicap {
+  height: 38px;
+}
+#jry-mobile #quotes-detail-container #handicap-top .handicap .index,
+#jry-mobile #quotes-detail-container #handicap-top .handicap .buy-sell,
+#jry-mobile #quotes-detail-container #handicap-top .handicap .updrop,
+#jry-mobile #quotes-detail-container #handicap-top .handicap .now {
+  float: left;
+  line-height: 38px;
+  vertical-align: middle;
+}
+#jry-mobile #quotes-detail-container #handicap-top .handicap .index {
+  height: 38px;
+  width: 30px;
+}
+#jry-mobile #quotes-detail-container #handicap-top .handicap .index .arrow {
+  height: 30px;
+  margin-top: 3px;
+}
+#jry-mobile #quotes-detail-container #handicap-top .handicap .buy-sell,
+#jry-mobile #quotes-detail-container #handicap-top .handicap .now {
+  font-size: 22px;
+  width: 50%;
+  font-weight: bold;
+  text-align: center;
+}
+#jry-mobile #quotes-detail-container #handicap-top .handicap .updrop {
+  font-size: 13px;
+  float: right;
+  height: 100%;
+  padding-right: 10px;
+  font-weight: bold;
+}
+#jry-mobile #quotes-detail-container #handicap-bottom {
+  font-size: 13px;
+}
+#jry-mobile #quotes-detail-container #handicap-bottom td {
+  line-height: 20px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+#jry-mobile #quotes-detail-container #handicap-bottom .x-innerhtml {
+  padding: 5px;
+}
+#jry-mobile #quotes-detail-container #handicap-bottom .handicap .down {
+  color: #007700;
+}
+#jry-mobile #quotes-detail-container #handicap-bottom .handicap .up {
+  color: #ec0000;
+}
+#jry-mobile #quotes-detail-container #handicap-bottom .high,
+#jry-mobile #quotes-detail-container #handicap-bottom .low,
+#jry-mobile #quotes-detail-container #handicap-bottom .open,
+#jry-mobile #quotes-detail-container #handicap-bottom .preclose,
+#jry-mobile #quotes-detail-container #handicap-bottom .avg,
+#jry-mobile #quotes-detail-container #handicap-bottom .volumeValue {
+  letter-spacing: 0px;
+  font-weight: bolder;
+  font-size: 13px;
+  text-align: left;
+}
+#jry-mobile #quotes-detail-container.style-now #handicap-top .buy-sell {
+  display: none;
+}
+#jry-mobile #quotes-detail-container.style-now #handicap-top .now {
+  display: auto;
+}
+#jry-mobile #quotes-detail-container.style-now #handicap-bottom .volume {
+  display: auto;
+}
+#jry-mobile #quotes-detail-container.style-buy-sell #handicap-top .buy-sell {
+  display: auto;
+}
+#jry-mobile #quotes-detail-container.style-buy-sell #handicap-top .now {
+  display: none;
+}
+#jry-mobile #quotes-detail-container.style-buy-sell #handicap-bottom .volume {
+  display: none;
+}
+@-webkit-keyframes flushing {
+  from {
+    background-color: #ffffff;
+  }
+  to {
+    background-color: #fde48e;
+  }
+}
+@-webkit-keyframes flushingDetail {
+  from {
+    color: #007700;
+  }
+  to {
+    color: #f2a41d;
+  }
+}
+#jry-mobile .x-title {
+  color: #562009;
+}
+#jry-mobile .x-layout-card-item {
+  background-color: #f8f8f8;
+}
+#jry-mobile .x-button-quotes-button {
+  border-width: 0px;
+}
+#jry-mobile .x-button-quotes-button.x-button-pressing {
+  opacity: 0.7;
+  background-image: none;
+}

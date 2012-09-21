@@ -1,0 +1,192 @@
+#jry-mobile{
+    #quotes-tabbar{
+    }
+    // #quotes-tabbar.middle:before,#quotes-tabbar.right:before,#quotes-tabbar.middle:after,#quotes-tabbar.left:after{
+    //     position:absolute;
+    //     top:16px;
+    //     width:5px;
+    //     height:8px;
+    //     z-index: 999;
+    //     content:'____';
+    //     color:#8a8d93;
+    //     background-color:#8a8d93;
+    // }
+    // #quotes-tabbar.middle:before,#quotes-tabbar.right:before{
+    //     left:5px;
+    //     -webkit-mask-box-image: url(../images/arrow_left.png);
+    // }
+    // #quotes-tabbar.middle:after,#quotes-tabbar.left:after{
+    //     right:5px;
+    //     -webkit-mask-box-image: url(../images/arrow_right.png);
+    // }
+
+    .quotes-panel{
+        .quotes-header,.quotes-header1{
+            font-size:0.8em;
+            font-family:'SimHei';
+            color:@quotes-header-color;
+            border-bottom: 1px solid @quotes-header-border-color;
+            padding-top:5px;
+            padding-bottom:5px;
+            .name{
+                padding-left:15px;
+            }
+        }
+        .quotes-header{
+            .buy,.sell,.now{
+                text-align:right;
+                padding-right:20px;
+            }   
+            .percent-updrop{
+                text-align:center;
+            }
+        }
+
+        .quotes-header1{
+
+            .now{
+                text-align:right;
+                padding-right:20px;
+            }   
+
+            .percent-updrop{
+                text-align:right;
+            }
+
+        }
+        .quotes-list,.quotes-list1{
+            .x-data-item{
+                font-size:0.8em;
+                font-weight: bold;
+            }
+            .x-data-item-pressed{
+                background-color: @x-data-item-pressed-bg-color;
+            }
+            .x-data-item.up{
+                .buy,.sell,.now{
+                    color:@quotes-up-button-bg-color;
+                }
+                .percent,.updrop{
+                    color:@quotes-button-color;
+                    background-color: @quotes-up-button-bg-color;
+                }
+
+            }
+            .x-data-item.down{
+                .buy,.sell,.now{
+                    color:@quotes-down-button-bg-color;
+                }
+                .percent,.updrop{
+                    color:@quotes-button-color;
+                    background-color: @quotes-down-button-bg-color;
+                }
+            }
+            .x-data-item.quotes-flushing{
+                -webkit-animation-name:flushing;
+                -webkit-animation-duration:500ms;
+            }
+        }
+        .quotes-list{
+            .x-data-item{
+                .name,.buy,.sell,.percent,.updrop,.now{
+                    display:inline-block;
+                    width:80px;
+                }
+                .name,.buy,.sell{
+                    padding-top:10px;
+                    padding-bottom:10px;
+                }
+
+                .name{
+                    text-align:left;
+                    padding-left:15px;
+                }
+
+                .buy,.sell,.now{
+                    text-align:right;
+                    padding-right:20px;
+                }   
+
+                .percent,.updrop{
+                    text-align:center;
+                    padding:7px 0px;
+                    margin-left:8px;
+                    width:64px;
+                }
+            }
+            
+        }
+
+        .quotes-list1{
+            .x-data-item{
+                .name,.percent,.updrop,.now{
+                    display:inline-block;
+                    width:100px;
+                }
+                .name,.now{
+                    padding-top:10px;
+                    padding-bottom:10px;
+                }
+
+                .name{
+                    text-align:left;
+                    padding-left:15px;
+                }
+
+                .now{
+                    text-align:right;
+                    padding-right:20px;
+                }   
+
+                .percent,.updrop{
+                    text-align:right;
+                    margin-left:48px;
+                    text-align:center;
+                    padding:7px 0px;
+                    width:64px;
+
+                }
+            }
+        }
+    }
+    .quotes-panel.percent{
+        .x-data-item{
+            border-bottom: 1px solid #bbb;
+
+            .percent{
+                display:auto;
+            }
+            .updrop{
+                display:none;
+            }
+        }
+        .quotes-header,.quotes-header1{
+            .percent{
+                display:auto;
+            }
+            .updrop{
+                display:none;
+            }
+        }
+    }
+    
+    .quotes-panel.updrop{
+        .x-data-item{
+            border-bottom: 1px solid #bbb;
+            .percent{
+                display:none;
+            }
+            .updrop{
+                display:auto;
+            }
+        }
+        .quotes-header,.quotes-header1{
+            .percent{
+                display:none;
+            }
+            .updrop{
+                display:auto;
+            }
+        }
+    }
+}
